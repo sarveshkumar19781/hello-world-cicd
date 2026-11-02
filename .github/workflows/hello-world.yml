@@ -26,11 +26,11 @@ jobs:
         run: python app.py
 
       - name: Run automated tests
-        run: python -m unittest -v
+        run: python -m unittest test_app.py -v
 
       - name: Package application
         run: |
-          mkdir dist
+          mkdir -p dist
           cp app.py test_app.py dist/
           cd dist
           zip -r hello-world.zip app.py test_app.py
