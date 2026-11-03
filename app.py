@@ -1,5 +1,7 @@
+# Hello World CI/CD Application
+
 def hello_world():
-    return "Hello, Devops!"
+    return "Hello, DevOps!"
 
 if __name__ == "__main__":
     print(hello_world())
